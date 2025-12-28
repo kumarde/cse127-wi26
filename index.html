@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/local.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,700" rel="stylesheet">
+
+    <title>CSE127: Computer Security</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-10">
+          <h1>Computer Security</h1>
+          <h3>UCSD CSE 127, Winter 2026</h3>
+
+          <p> This  course focuses on computer and network security, covering a
+          wide range of topics on both the "defensive" and "offensive" side of
+          computer security. Among these will be application security and
+          exploitation (buffer overflows, race conditions, SQL injection, etc),
+          access control and authentication, covert channels, web and website
+          security, network protocol attacks, intrusion detection/prevention,
+          viruses/worms and bots, spyware and phishing, denial-of-service,
+          privacy/anonymity, and computer forensics. The goal of this course is
+          to provide both an appreciation for how to think adversarially with
+          respect to computer systems as well as how to reason about (and
+          implement) a handful of well known attacks and defenses against
+          existing systems.</p>
+
+          <p> To complete the projects in this course, you will need to have
+          (or gain) familiarity with C, assembly, JavaScript, PHP, SQL, and
+          Python. We will not explicitly teach these in class and you will be
+          expected to pick up what you need for each project on your own. </p>
+
+          <h2>Course Information</h2>
+
+		  <p><b>Lecture:</b> Tu/Th 8:00&ndash;9:20 AM.
+		  <a href="https://share.google/UEdAHEwdajskZZ1dM">Pepper Canyon Hall 122</a>.
+          
+          <p><b>Instructor:</b> <a href="https://kumarde.com">Deepak Kumar</a><br/>
+             Office Hours: Tuesday 11:00 AM&ndash;12:00 PM, or by appointment, CSE 3248.</p>
+          
+          <p><b>Teaching Assistant:</b> Bella Jeong, ljeong@ucsd.edu<br/>
+             Office Hours: TBD</p>
+          
+          <p><b>Tutor:</b> Manan Patel, mbp001@ucsd.edu<br/>
+             Office Hours: TBD</p>
+          
+          <p><b>Communication:</b> We use <a href="https://canvas.ucsd.edu/courses/71475">Canvas</a> for announcements; discussion happens on <a href="https://piazza.com/ucsd/winter2026/cse127_wi26_a00/home">Piazza.</a> <a href="https://docs.google.com/document/d/1_yjoUIcuIKcRv-9gaEE0uiGZAtJyY8HYreMAOf9zjvE/edit?tab=t.0" target="_blank">You can find the syllabus here.</a></p> 
+          <p><b>Submissions:</b> All course assignments will be submitted
+          through Gradescope, accessible through Canvas.</p>
+          <h2>Schedule</h2>
+          <p>The tentative schedule and readings for the class are below:</p>
+          <div class="papers">
+            <div class="row">
+              <div class="col col-lg-6">
+				<h4>1/6&nbsp;&nbsp;Introduction and Administrivia</h4>
+                <p> Introduction, definitions, reflections on trusting trust,
+                logistics.</a></p>
+              </div>
+              <div class="col col-lg-6">
+                <h4>1/8&nbsp;&nbsp;Application Security 1</h4>
+                <p>Control flow vulnerabilities: buffer overflows</a></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-lg-6">
+                <h4>1/13&nbsp;&nbsp;Application Security 2</h4>
+                <p>Control flow vulnerabilities: Format strings, integers,
+                heaps</a></p>
+              </div>
+              <div class="col col-lg-6">
+                <h4>1/15&nbsp;&nbsp;Application Security 3</h4>
+                <p>Control flow vulnerabilities: Return-oriented programming,
+                defenses, control-flow integrity</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-lg-6">
+                <h4>1/20&nbsp;&nbsp;Systems Security 1</h4>
+                <p>Isolation and privilege in operating systems</p>
+              </div>
+             <div class="col col-lg-6">
+                <h4>1/22&nbsp;&nbsp;Systems Security 2</h4>
+                <p>Side channels, covert channels, attacks and defenses</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-lg-6">
+                <h4>1/27&nbsp;&nbsp;Web Security 1</h4>
+                <p>Introduction to web models, protocols, architecture</p>
+              </div>
+              <div class="col col-lg-6">
+                <h4>1/29&nbsp;&nbsp;Web Security 2</h4>
+                <p>Attacks on the web</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-lg-6">
+                <h4>2/3&nbsp;&nbsp;Web Security 3</h4>
+                <p>Defenses on the web; web measurements today</p>
+             </div>
+              <div class="col col-lg-6">
+		        <h4>2/5&nbsp;&nbsp;Network Security 1</h4>
+                <p>Introduction to networks, TCP/IP, basic attacks</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-lg-6">
+                <h4>2/10&nbsp;&nbsp;Network Security 2</h4>
+                <p>More network attacks, DNS, DDoS</p>
+              </div>
+              <div class="col col-lg-6">
+                <h4>2/12&nbsp;&nbsp;Midterm, in class.</h4>
+              </div>
+            </div>
+           <div class="row">
+              <div class="col col-lg-6">
+                <h4>2/17&nbsp;&nbsp;Network Security 3</h4>
+                <p>Network defenses, firewalls, permieter defense,
+                intrusion detection</p>
+              </div>
+              <div class="col col-lg-6">
+                <h4>2/19&nbsp;&nbsp;Network Security 4</h4>
+                <p>Users, passwords, multi-factor authentication</p>
+              </div>
+           </div>
+            <div class="row">
+              <div class="col col-lg-6">
+                <h4>2/24&nbsp;&nbsp;Cryptography 1</h4>
+                <p>Introduction, symmetric-key cryptography</p>
+              </div>
+              <div class="col col-lg-6">
+                <h4>2/27&nbsp;&nbsp;Cryptography 2</h4>
+                <p>Asymmetric-key cryptography, key-exchange</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-lg-6">
+                <h4>3/3&nbsp;&nbsp;Cryptography 3</h4>
+                <p>TLS, HTTPS, and the modern web</p>
+              </div>
+              <div class="col col-lg-6">
+                <h4>3/5&nbsp;&nbsp;Security & Society 1</h4>
+                <p>Privacy, anonymity, and censorship</p>
+              </div>
+            </div>
+			<div class="row">
+              <div class="col col-lg-6">
+                <h4>3/10&nbsp;&nbsp;Security & Society 2</h4>
+                <p>Usable security and privacy, why Johnny (still) can't
+                encrypt.</p>
+              </div>
+              <div class="col col-lg-6">
+                <h4>3/12&nbsp;&nbsp;Security & Society 3</h4>
+                <p>Sociotechnical security and the beyond.</p>
+              </div>
+            </div>
+          </div>
+
+          <h2>Course Structure</h2>
+
+          <p> This is a typical project and exam structured course. Grading is
+          based on the following components:</p>
+
+          <p style="padding-top: 10px"><b>Programming Assignments (40%)</b></p>
+          <p> There are four programming assignments (PAs) in the course, each
+          of which is worth 10% of your overall grade. In addition, there will
+          be a PA0 that does not count for any points but is mandatory to
+          complete in the first week of class. The schedule of release and due
+          dates for PAs will be displayed on the course webpage. All
+          assignments MAY be done in teams of two, but no more than two per
+          team. Teams can change from PA to PA. </p>
+
+          <p style="padding-top: 10px"><b>Midterm (30%)</b></p>
+          <p> There will be one in-class midterm (90 minutes) in week 6 on
+          2/12. The midterm will cover both lecture and project material from
+          PA0 – PA2. </p>
+          
+          <p style="padding-top: 10px"><b>Final (30%)</b></p>
+          <p> The final exam will be on March 18th, 2026 from 8am–11am. The
+          final exam will be comprehensive for the course, but with material
+          weighted towards the second half of the course. </p>
+          <br/><br/>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
