@@ -70,3 +70,6 @@ li {
 a { color: #ab0d0d; text-decoration: none; }
 a:hover { color: #ab0d0d; text-decoration:underline; }
 
+.readings{
+    color: blue;
+}
